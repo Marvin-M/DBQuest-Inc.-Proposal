@@ -653,6 +653,7 @@ ul.sub-menu {
 }
 
 .vertical-center{
+	background-image: url("../images/banner.png");
   display: table-cell;
   vertical-align: middle;
   width: 100%;
@@ -2433,7 +2434,7 @@ span.stButton_gradient,
 }
 
 .bg-404 {
-  background-image: url("../images/404-bg.png");
+ 
   background-repeat: repeat-x;
   background-position: center top;
 }
