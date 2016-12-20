@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
     <title>DBQuest, Inc.</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet"> 
     <link href="css/lightbox.css" rel="stylesheet"> 
+    <link href="css/animate.min.css" rel="stylesheet"> 
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/ico/favicon-32x32.png" sizes="32x32" />
@@ -18,7 +18,11 @@
 	    <script src="js/html5shiv.js"></script>
 	    <script src="js/respond.min.js"></script>
     <![endif]-->       
-
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 
 <body>
@@ -49,7 +53,7 @@
                     </button>
 
                     <a class="navbar-brand" href="index.html">
-                    	<h1><img src="images/logo2.jpg" alt="logo"></h1>
+                        <h1><img src="images/logo2.jpg" alt="logo"></h1>
                     </a>
                     
                 </div>
@@ -57,8 +61,18 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="index.html">Home</a></li>
                         <li class="active"><a href="aboutus.html">About Us</a></li>   
-                        <li class="active"><a href="service2.html">Product / Services</a></li>                
-                        <li class="dropdown"><a href="training.html">Training<i class="fa fa-angle-down"></i></a>
+                        <li class="dropdown"><a href="service.html">Services<i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="portfolio.html">Oracle Technology</a></li>
+                                <li><a href="portfoliofour.html">Sunfish HR</a></li>
+                                <li><a href="portfolioone.html">HP BSM</a></li>
+                                <li><a href="portfoliotwo.html">VMware</a></li>
+                                <li><a href="portfoliothree.html">MySQL</a></li>
+                                <li><a href="portfolio-details.html">EMC</a></li>
+                                <li><a href="portfolio-details.html">Microsoft</a></li>
+                            </ul>
+                        </li>                
+                        <li class="dropdown"><a href="blog.html">Training<i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
                                 <li><a href="blogone.html">Database Application Development</a></li>
                                 <li><a href="blogone.html">MySQL</a></li>
@@ -85,164 +99,47 @@
             </div>
         </div>
     </header>
-    <!--/#header-->
+    <!--/#header-->    
 
-    <section id="home-slider">
-        <div class="container">
-            <div class="row">
-                <div class="main-slider">
-                    <div class="slide-text">
-                        <h1><b>ORACLE GOLD PARTNER<b></h1>
-                        <p>DBQuest, Inc. offers technical competence in Oracle and related software technologies, including multi-platforms and hardware. The company is an Oracle Certified Partner and an Oracle Authorized Education Provider. </p>
-                        <a href="#" class="btn btn-common">Learn more</a>
-                    </div>
-                    <img src="images/home/slider/oracle_database.png" class="slider-hill" alt="slider image"> 	
-                </div>
-            </div>
-        </div>
-        <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
-    </section>
-    <!--/#home-slider-->
-
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
-                    <div class="single-service">
-                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
-                           <a href="#"> <img src="images/home/oracle 12c.png" alt=""> </a> 
-                        </div>
-                        <h2 class="active">Oracle 12c</h2>
-                        <p>Oracle’s latest database cloud innovations help more businesses than ever leverage industry-leading enterprise capabilities while simplifying access for IT and developers.</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
-                    <div class="single-service">
-                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
-                            <a href="#"> <img src="images/home/oracle_vm.png" alt=""> </a>
-                        </div>
-                        <h2>VMWare</h2>
-                        <p>Provides cloud and virtualization software and services, and the first to successfully virtualize the x86 architecture commercially. </p>
-                    </div>
-                </div>
-                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
-                    <div class="single-service">
-                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
-                            <a href="#"> <img src="images/home/oracle_be_an_expert.png" alt=""> </a>
-                        </div>
-                        <h2>Be an Oracle Technology Expert</h2>
-                        <p>Enroll now in our Premiere Class and learn today's technology when it comes to Software and Middleware Applications</p>
-                    </div>
-                </div>
-				<!--
-				<div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="1200ms">
-                    <div class="single-service">
-                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="1200ms">
-                            <a href="#"> <img src="images/home/fusion_middleware.png" alt=""> </a>
-                        </div>
-                        <h2>The Foundation of Innovation</h2>
-                        <p>Complete. Integrated. Hot-Pluggable. Best-of-Breed.</p>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </section>
-    <!--/#services-->
-
-   <!--  <section id="action" class="responsive">
-        <div class="vertical-center">
+    <section id="page-breadcrumb">
+        <div class="vertical-center sun">
              <div class="container">
                 <div class="row">
-                    <div class="action take-tour">
-                        <div class="col-sm-7 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <h1 class="title">Triangle Corporate Template</h1>
-                            <p>A responsive, retina-ready &amp; wide multipurpose template.</p>
-                        </div>
-                        <div class="col-sm-5 text-center wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <div class="tour-button">
-                                <a href="#" class="btn btn-common">TAKE THE TOUR</a>
-                             </div>
-                        </div>
+                    <div class="action">
+                        <div class="col-sm-12">
+                            <h1 class="title">Career Opportunities</h1>
+                        </div>                        
                     </div>
                 </div>
             </div>
         </div>
-   </section> -->
+   </section>
     <!--/#action-->
 
-    <section id="features">
-        <div class="container">
-            <div class="row">
-                <div class="single-features">
-                    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="images/home/sunfishhr.png" class="img-responsive" alt="">
-                    </div>
-                    <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2>SunFish HR</h2>
-                        <P>SunFish HR has been developed with globalization in mind and an adaptability that allows deployment in countries and offices all around the world with no constraints.</P>
-                         <a href="#" class="btn btn-common">Read more</a>
-                    </div>
-                </div>
-                <div class="single-features">
-                    <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2>Oracle Database</h2>
-                        <P>The innovation continues with Oracle Database 12c to lower costs and deliver a higher quality of services.</P>
-                         <a href="#" class="btn btn-common">Learn more</a>
-                    </div>
-                    <div class="col-sm-5 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="images/home/oracle_db.png" class="img-responsive" alt="">
-                    </div>
-                </div>
-                <div class="single-features">
-                    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="images/home/oracle_expert.png" class="img-responsive" alt="">
-                    </div>
-                    <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2>Be an Oracle Expert</h2>
-                        <P>DBQuest is an Oracle Gold partner as well as an Oracle Approved Education Center. Oracle University and DBQuest invite you to participate in the Public Course Offerings.</P>
-                         <a href="#" class="btn btn-common">Learn more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-     <!--/#features-->
-
-	<!--
-    <section id="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="clients text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <p><img src="images/home/clients.png" class="img-responsive" alt=""></p>
-                        <h1 class="title">Satisfied Clients.</h1>
-                    </div>
-                    <div class="clients-logo wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
-                        <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client1.png" class="img-responsive" alt=""></a>
-                        </div>
-                        <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client2.png" class="img-responsive" alt=""></a>
-                        </div>
-                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client3.png" class="img-responsive" alt=""></a>
-                        </div>
-                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client4.png" class="img-responsive" alt=""></a>
-                        </div>
-                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client5.png" class="img-responsive" alt=""></a>
-                        </div>
-                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client6.png" class="img-responsive" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-     </section> -->
-    <!--/#clients-->
 	
+	<div class="container">
+            <div class="row"> 
+				 <img src="images/careers.png" class="img-responsive inline" alt="" style="width: 400px; height: 200px">
+				<h3>Click the career options below for detailed information</h3>
+				<ul style="list-style-type:disc">
+					<li><a href="#"> Account Manager </a></li>
+					<li><a href="#"> Oracle/MySQL Instructor/Trainer </a></li>
+				</ul>
+				
+				
+				<br>
+				<br>
+				<br>
+				<br>
+				
+				<center>
+				<h3> Interested Applicants may send their resume to: <a href="yves.ferrer@databasequest.com">yves.ferrer@databasequest.com</a></h3>
+				<h4><p> Please indicate the position you are applying for as the subject. </p></h4>
+				<font color="red" style="font-style: italic;">Check your email from time to time</font>
+				</center>
+			</div>
+	</div>
+
     <footer id="footer">
         <div class="container">
             <div class="row">
@@ -344,9 +241,11 @@
     </footer>
     <!--/#footer-->
 
+
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="js/gmaps.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>   
 </body>
