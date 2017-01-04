@@ -1,0 +1,6 @@
+ @font-face {
+  font-family: 'USA Black Italic';
+  src: local("USA Black Italic"),
+       url(USA Black Italic.ttf) format('truetype'),
+	   font-weight: italic;
+}
