@@ -254,10 +254,18 @@
   background: none;
 }
 
+/* Added Part */
 #header .navbar {
   background: #fff;
   border: 0;
   margin-bottom: 0;
+background-image: url(../images/c-banner.png);
+width: max-width;
+height: max-height;
+}
+/* Added Part */
+header{
+	 background-image: url(../images/tb-banner.png);
 }
 
 #header .navbar-toggle{
@@ -279,7 +287,7 @@
 }
 
 #header .navbar-nav.navbar-right >li a {
-  color: #000;
+  color: white;  /* prev color: #000; */
   font-size: 12px;
   padding: 20px;
   text-transform: uppercase;
@@ -293,7 +301,7 @@
 .navbar-inverse .navbar-nav > .open > a {
   background-color: inherit;
   border: 0;
-  color: #00aeef;
+  color: white; /* prev: color: #00aeef; */
 }
 
 #header .navbar-inverse .navbar-nav  li a:hover{
