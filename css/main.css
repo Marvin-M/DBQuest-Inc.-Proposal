@@ -666,7 +666,7 @@ ul.sub-menu {
 }
 
 .vertical-center{
-	background-image: url("../images/banner.png");
+  background-image: url("../images/banner.png"); 
   display: table-cell;
   vertical-align: middle;
   width: 100%;
