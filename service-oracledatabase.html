@@ -19,7 +19,113 @@
     <!--[if lt IE 9]>
         <script src="js/html5shiv.js"></script>
         <script src="js/respond.min.js"></script>
-    <![endif]-->       
+    <![endif]--> 
+
+    <style>
+    
+    /* 
+    Max width before this PARTICULAR table gets nasty
+    This query will take effect for any screen smaller than 760px
+    and also iPads specifically.
+    */
+
+    * { 
+    margin: 0; 
+    padding: 0; 
+    }
+    #page-wrap {
+    margin: 50px;
+    }
+    p {
+    margin: 20px 0; 
+}
+
+    /* 
+    Generic Styling, for Desktops/Laptops 
+    */
+    table { 
+        width: 100%; 
+        border-collapse: collapse; 
+    }
+    /* Zebra striping */
+    tr:nth-of-type(odd) { 
+        background: #eee; 
+    }
+    th { 
+        background: #11B2E2; 
+        color: white; 
+        font-weight: bold; 
+    }
+    td, th { 
+        padding: 6px; 
+        border: 1px solid #ccc; 
+        text-align: left; 
+    }
+
+    @media 
+    only screen and (max-width: 760px),
+    (min-device-width: 768px) and (max-device-width: 1024px)  {
+    
+        /* Force table to not be like tables anymore */
+        table, thead, tbody, th, td, tr { 
+            display: block; 
+        }
+        
+        /* Hide table headers (but not display: none;, for accessibility) */
+        thead tr { 
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+        
+        tr { 
+            border: 1px solid #ccc; 
+        }
+        
+        td { 
+            /* Behave  like a "row" */
+            border: none;
+            border-bottom: 1px solid #eee; 
+            position: relative;
+            padding-left: 50%; 
+        }
+        
+        td:before { 
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 6px;
+            left: 6px;
+            width: 45%; 
+            padding-right: 10px; 
+            white-space: nowrap;
+        }
+        
+        /*
+        Label the data
+        */
+        td:nth-of-type(1):before { content: "Course Title" }
+        td:nth-of-type(2):before { content: "Course Code"; }
+    }
+    
+    /* Smartphones (portrait and landscape) ----------- */
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+        body { 
+            padding: 0; 
+            margin: 0; 
+            width: 320px; }
+        }
+    
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        body { 
+            width: 495px; 
+        }
+    }
+    
+    </style>              
     
 </head><!--/head-->
 
@@ -114,21 +220,26 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="project-name overflow">
-                        <h1 class="bold">Affordable, Full-Featured Database</h1>
+                        <h1 class="bold">Oracle Database 12c Standard Edition</h1>
+                        <ul class="elements">
+                            <li><i class="fa fa-check-circle" aria-hidden="true"></i><b>Provides complete upward compatibility, protecting your investment as your usage requirements grow</b></li>
+                            <li><i class="fa fa-check-circle" aria-hidden="true"></i><b>Affordable, Full-Featured Database</b></li>
+                            <li><i class="fa fa-check-circle" aria-hidden="true"></i><b>Power. Price. Peformance.</b></li>
+                        </ul>
                         <!-- <ul class="nav navbar-nav navbar-default">
                             <li><a href="#"><i class="fa fa-clock-o"></i>February11,2014</a></li>
                             <li><a href="#"><i class="fa fa-tag"></i>Branding</a></li>
                         </ul> -->
                     </div>
                     <div class="project-info overflow">
-                        <h3>Oracle Database Standard Edition offers a low cost alternative for small/medium business or departmental applications that want the power of Oracle. Oracle Database Standard Edition can only be licensed on servers that have a maximum capacity of 4 sockets. If licensing by Named User Plus, the minimum is 5 Named User Plus licenses.</h3>
-                        <h3>Effective with the release of 11g, the Oracle Database Standard Edition product includes the Real Applications Clusters database option. Customers who obtain Oracle’s Software Updates License & Support for the Standard Edition Database can upgrade to the 11g version of the product for the supported licenses.</h3>
-                    <h2><b> Overview </b></h2>
+                        <p align="justify">Oracle Database Standard Edition 2 is an affordable, full-featured database built for unprecedented ease of use, power, and performance. From single-server environments for small business to highly distributed branch environments, Oracle Database Standard Edition 2 includes all the features necessary to build business applications.</p>
+                    <h1 class="bold">Overview</h1>
                     <ul class="elements">
-                        <li><i class="fa fa-angle-right"></i><b>Built-in Oracle Real Application Clusters support for higher levels of system uptime</li>
-                        <li><i class="fa fa-angle-right"></i>Simplified installation and configuration</li>
-                        <li><i class="fa fa-angle-right"></i>Suitable for all types of data and all of your applications</li>
-                        <li><i class="fa fa-angle-right"></i>Upwardly, compatible with Oracle Database Enterprise Edition, it can easily grow with you, which protects your initial investment</li>
+                        <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Optimized for deployment in small enterprises, line-of-business departments, and distributed branch environments.</li>
+                        <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Offers customers a container database architecture, making it easier to plug into the cloud.</li>
+                        <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Includes rapid application development tools and supports a wide range of developer frameworks and data types including XML and JSON.</li>
+                        <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Available on servers supporting a maximum of two sockets on all Oracle-supported operating systems, including Windows, Linux, and Unix.</li>
+                        <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Provides complete upward compatibility, protecting your investment as your usage requirements grow.</li>
                     </ul>
                     </div>
                    <!-- <div class="skills overflow">
@@ -152,13 +263,110 @@
                 </div>
             </div>
         </div>
+
+
+    </section>
+
+    <section id="portfolio-information" class="padding-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="images/portfolio-details/1.jpg" class="img-responsive" alt="">
+                </div>
+                <div class="col-sm-6">
+                    <div class="project-name overflow">
+                        <h1 class="bold">Oracle Database 12c Enterprise Edition</h1>
+                        <ul class="elements">
+                            <li><i class="fa fa-check-circle" aria-hidden="true"></i><b>Transforming Data Management</b></li>
+                            <li><i class="fa fa-check-circle" aria-hidden="true"></i><b>Power. Price. Performance.</b></li>
+
+                        <!-- <ul class="nav navbar-nav navbar-default">
+                            <li><a href="#"><i class="fa fa-clock-o"></i>February11,2014</a></li>
+                            <li><a href="#"><i class="fa fa-tag"></i>Branding</a></li>
+                        </ul> -->
+                    </div>
+                    <div class="project-info overflow">
+                        <p align="justify">Oracle Database 12c Release 2 was built to transform the access and value of enterprise data — the lifeblood of your business. Designed for the cloud, Oracle Database 12c allows you to lower IT costs, increase agility in provisioning database services, and elastically scale up, scale out, and scale down IT resources as needed.</p>
+                        <p align="justify">Available on single and clustered servers with no socket limitation. It provides efficient, reliable, and secure data management for mission-critical transactional applications, query-intensive big data warehouses, and mixed workloads.</p>
+                    <h2><b> Overview </b></h2>
+                    <ul class="elements">
+                        <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Oracle Database 12c Enterprise Edition will greatly benefit customers deploying private database clouds and SaaS vendors looking for the power of Oracle Database in a secure and isolated multitenant model.</li>
+                        <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Oracle Database 12c Enterprise Edition provides comprehensive features to manage the most demanding transaction processing, big data, and data warehouse workloads.</li>
+                        <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Customers can choose a wide range of Oracle Database Enterprise Edition options to deliver on business users' performance, security, big data, cloud, and availability service-level expectations.</li>
+                    </ul>
+                    </div>
+                   <!-- <div class="skills overflow">
+                        <h3>Skills:</h3>
+                        <ul class="nav navbar-nav navbar-default">
+                            <li><a href="#"><i class="fa fa-check-square"></i>Design</a></li>
+                            <li><a href="#"><i class="fa fa-check-square"></i>HTML/CSS</a></li>
+                            <li><a href="#"><i class="fa fa-check-square"></i>Javascript</a></li>
+                            <li><a href="#"><i class="fa fa-check-square"></i>Backend</a></li>
+                        </ul>
+                    </div> -->
+                    <!-- <div class="client overflow">
+                        <h3>Client:</h3>
+                        <ul class="nav navbar-nav navbar-default">
+                            <li><a href="#"><i class="fa fa-bolt"></i>Okler Themes</a></li>
+                        </ul>
+                    </div> -->
+                    <!-- <div class="live-preview">
+                        <a href="#" class="btn btn-common uppercase">Live preview</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        
     </section>
      <!--/#portfolio-information-->
+
+     <div class="container">
+    <div class="row">
+            <div id="page-wrap">
+    <table>
+        <thead>
+        <tr>
+            <th>Features</th>
+            <th>Benefits</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>New multitenant architecture</td>
+            <td>Enables higher levels of consolidation on the cloud without the need to change existing applications</td>
+        </tr>
+        <tr>
+          <td>Automatic Data Optimization</td>
+          <td>Efficiently manage more data, lower cstorage costs, and improve database performance</td>
+        </tr>
+        <tr>
+          <td>Defense-in-depth database security</td>
+          <td>Addresses evolving threats and stringent data privacy regulations</td>
+        </tr>
+        <tr>
+          <td>Data Guard</td>
+          <td>Maximize availability with protection from server failure, site failure, human error, reduced planned downtime, and application continuity</td>
+        </tr>
+        <tr>
+          <td>In-Memory</td>
+          <td>Scalable discovery of business event sequences with enhanced in-database analytics capabilities for big data</td>
+        </tr>
+        <tr>
+          <td>Seamless integration with Oracle Enterprise Manager Cloud Control 12c</td>
+          <td>Enables administrators to easily manage the entire database lifecycle</td>
+        </tr>
+        </tbody>
+    </table>
+    
+        </div>
+    </div>
+</div>
 
     <section id="related-work" class="padding-top padding-bottom">
         <div class="container">
             <div class="row">
-                <h1 class="title text-center">Related Work</h1>
+                <h1 class="text-center" color="gray">Related Work</h1> <br>
                 <div class="col-sm-4">
                     <div class="portfolio-wrapper">
                         <div class="portfolio-single">
@@ -173,7 +381,7 @@
                             </div>
                         </div>
                         <div class="portfolio-info ">
-                            <h2>DBQuest on Oracle Databases</h2>
+                            <h2>DBQuest on Oracle Database</h2>
                         </div>
                     </div>
                 </div>
