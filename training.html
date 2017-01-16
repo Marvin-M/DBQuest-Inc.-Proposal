@@ -13,6 +13,7 @@
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/ico/favicon-32x32.png" sizes="32x32" />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/ >
 
     <!--[if lt IE 9]>
 	    <script src="js/html5shiv.js"></script>
@@ -76,7 +77,9 @@
             left: -9999px;
         }
         
-        tr { border: 1px solid #ccc; }
+        tr { 
+            border: 1px solid #ccc; 
+        }
         
         td { 
             /* Behave  like a "row" */
@@ -100,16 +103,12 @@
         /*
         Label the data
         */
-        td:nth-of-type(1):before { content: "First Name"; }
-        td:nth-of-type(2):before { content: "Last Name"; }
-        td:nth-of-type(3):before { content: "Job Title"; }
-        td:nth-of-type(4):before { content: "Favorite Color"; }
-        td:nth-of-type(5):before { content: "Wars of Trek?"; }
-        td:nth-of-type(6):before { content: "Porn Name"; }
-        td:nth-of-type(7):before { content: "Date of Birth"; }
-        td:nth-of-type(8):before { content: "Dream Vacation City"; }
-        td:nth-of-type(9):before { content: "GPA"; }
-        td:nth-of-type(10):before { content: "Arbitrary Data"; }
+        td:nth-of-type(1):before { content: "Course Title" }
+        td:nth-of-type(2):before { content: "Course Code"; }
+        td:nth-of-type(3):before { content: "Day(s)"; }
+        td:nth-of-type(4):before { content: "Start Date - End Date"; }
+        td:nth-of-type(5):before { content: "Course Fee (Vat Ex)"; }
+        td:nth-of-type(6):before { content: "Training Format "; }
     }
     
     /* Smartphones (portrait and landscape) ----------- */
@@ -168,8 +167,8 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li class="active"><a href="aboutus.html">About Us</a></li>   
+                        <li class="active"><a href="aboutus.html">About Us</a></li>
+                        <li class="active"><a href="index.html">Home</a></li>   
                         <li class="active"><a href="service2.html">Product / Services</a></li>                
                         <li class="dropdown"><a href="training.html">Training<i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">

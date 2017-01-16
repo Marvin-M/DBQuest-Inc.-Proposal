@@ -3,7 +3,7 @@ $name       = @trim(stripslashes($_POST['name']));
 $from       = @trim(stripslashes($_POST['email'])); 
 $subject    = @trim(stripslashes($_POST['subject'])); 
 $message    = @trim(stripslashes($_POST['message'])); 
-$to   		= 'inquiry@databasequest.com';//replace with your email
+$to   		= 'marvinmagbalon2@gmail.com';//replace with your email
 
 $headers   = array();
 $headers[] = "MIME-Version: 1.0";
